@@ -16,6 +16,7 @@ spring:
     job:
       enabled: true
     initialize-schema: always
+    schema: classpath:org/springframework/batch/core/schema-postgresql.sql
 
   rabbitmq:
     host: localhost
