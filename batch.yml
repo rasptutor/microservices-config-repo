@@ -1,13 +1,25 @@
 spring:
+  application:
+    name: batch
+
   datasource:
     url: jdbc:postgresql://localhost:5432/mydatabase
     username: myuser
     password: secret
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: none
+
   batch:
     job:
       enabled: true
     initialize-schema: always
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: myuser
+    password: secret
+ 
