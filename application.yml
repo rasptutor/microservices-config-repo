@@ -1,0 +1,21 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include=*
+
+spring:
+  threads:
+    virtual:
+      enabled: true
+  
+  rabbitmq:
+    addresses=localhost
+    username=myuser
+    password=secret
+
+  datasource:
+    url=jdbc:postgresql://localhost/mydatabase
+    username=myuser
+    password-secret
+      
