@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: service
+  
+  modulith:
+    events:
+      republish-outstanding-events-on-restart: true
+      jdbc:
+        schema-initialization:
+          enabled: true
+  
+  graphql:
+    graphiql:
+      enabled: true
+  
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9090
